@@ -22,6 +22,7 @@ C:\users\<username>\AppData\Local\FSNRestoration\cache\patch00m.en.bin,
 
 .\build_russian_patch.bat --russian .\russian_patch00m.bin --baseline .\original_patch00m.bin --restored-english .\restored_patch00m.en.bin --fpd-key .\decryptKey.bin --some-key .\SomeKey.bin --epk-tool .\main.exe --output .\patch00m.ru.bin
 
+После выполнения скрипта создается patch00m.ru.bin, переименуйте в patch00m.bin и поместите в Blade\obb c заменой
 
 https://github.com/Take00C/FSN-Remastered-Restoration
 What you need
