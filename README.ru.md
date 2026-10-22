@@ -16,7 +16,7 @@
 |---|---|
 | `russian_patch00m.bin` | Исходный патч русского перевода |
 | `original_patch00m.bin` | Оригинальный файл REMASTERED |
-| `restored_patch00m.en.bin` | Английский патч после обработки FSN-Remastered-Restoration |
+| `restored_patch00m.en.bin` | Файл REMASTERED после обработки FSN-Remastered-Restoration |
 | `decryptKey.bin` | Файл ключа расшифровки |
 | `SomeKey.bin` | Дополнительный файл ключа |
 | `main.exe` | Инструмент обработки EPK |
@@ -24,7 +24,7 @@
 
 ### 2. Найдите исходные файлы
 
-Запустите `FSN.Restoration.Launcher.exe`. Восстановленный английский патч сохраняется в кэше:
+Запустите `FSN.Restoration.Launcher.exe`. Файл REMASTERED после обработки FSN-Remastered-Restoration:
 
 ```text
 %LOCALAPPDATA%\FSNRestoration\cache\patch00m.en.bin
@@ -32,7 +32,7 @@
 
 Скопируйте этот файл в каталог сборки и переименуйте его в `restored_patch00m.en.bin`.
 
-Оригинальный английский патч хранится здесь:
+Оригинальный файл REMASTERED хранится здесь:
 
 ```text
 %LOCALAPPDATA%\FSNRestoration\backup-obb\original_patch00m.bin
@@ -54,8 +54,7 @@
 .\build_russian_patch.bat --russian .\russian_patch00m.bin --baseline .\original_patch00m.bin --restored-english .\restored_patch00m.en.bin --fpd-key .\decryptKey.bin --some-key .\SomeKey.bin --epk-tool .\main.exe --output .\patch00m.ru.bin
 ```
 
-### 4. Установите результат
-
+### 4. Установите
 После успешной сборки появится файл:
 
 ```text
