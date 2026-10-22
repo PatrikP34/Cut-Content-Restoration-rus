@@ -1,10 +1,10 @@
 Как запустить сборку
 
-Убедитесь, что в папке рядом с build_russian_patch.bat есть:
+Убедитесь, что в папке рядом с build_russian_patch_latest.bat есть:
 
-russian_patch00m.bin — исходный русский перевод;
+russian_patch00m.bin — файл исходного русского перевод;
 
-original_patch00m.bin — чистая английский версия Fate/stay night REMASTERED;
+original_patch00m.bin — файл оригинала английской версии Fate/stay night REMASTERED;
 
 restored_patch00m.en.bin — файл, полученный после применения к нему патча https://github.com/Take00C/FSN-Remastered-Restoration;
 
@@ -12,7 +12,7 @@ decryptKey.bin и SomeKey.bin, main.exe;
 папка russian_merge со скриптами сборщика.
 
 FSN.Restoration.Launcher.exe создает restored_patch00m.en.bin в папке 
-C:\users\<username>\AppData\Local\FSNRestoration\cache\patch00m.en.bin, 
+C:\users\<username>\AppData\Local\FSNRestoration\cache\patch00m.en.bin,
 
 В C:\Users\<username>\AppData\Local\FSNRestoration\backup-obb хранится original_patch00m.bin 
 
