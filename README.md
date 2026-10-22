@@ -96,7 +96,7 @@ patch00m.ru.bin
 
 ### Использование ИИ
 
-Лаунчер разработан при помощи AI coding agent Copilot gpt astra и REA: Reverse Engineer Anything под руководством автора проекта.
+Лаунчер разработан при помощи AI coding agent Copilot gpt astra и REA: Reverse Engineer Anything
 
 ---
 
