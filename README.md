@@ -17,6 +17,8 @@ C:\users\<username>\AppData\Local\FSNRestoration\cache\patch00m.en.bin,
 В C:\Users\<username>\AppData\Local\FSNRestoration\backup-obb хранится original_patch00m.bin 
 
 Для объединения русификатора и патча Remastered-Restoration запустите build_russian_patch_latest.bat
+
+либо через командую строку
 .\build_russian_patch.bat --russian .\russian_patch00m.bin --baseline .\original_patch00m.bin --restored-english .\restored_patch00m.en.bin --fpd-key .\decryptKey.bin --some-key .\SomeKey.bin --epk-tool .\main.exe --output .\patch00m.ru.bin
 
 
