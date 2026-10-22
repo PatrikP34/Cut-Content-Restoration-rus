@@ -2,12 +2,17 @@
 Убедитесь, что в папке рядом с build_russian_patch.bat есть:
 
 russian_patch00m.bin — исходный русский архив;
+
 original_patch00m.bin — чистый английский архив до Restoration;
+
 restored_patch00m.en.bin — английский архив после подготовки Restoration;
+
 decryptKey.bin и SomeKey.bin;
+
 main.exe;
+
 папка russian_merge со скриптами сборщика.
-Откройте эту папку в Проводнике. Кликните по адресной строке, введите powershell и нажмите Enter.
+
 
 
 .\build_russian_patch.bat --russian .\russian_patch00m.bin --baseline .\original_patch00m.bin --restored-english .\restored_patch00m.en.bin --fpd-key .\decryptKey.bin --some-key .\SomeKey.bin --epk-tool .\main.exe --output .\patch00m.ru.bin
