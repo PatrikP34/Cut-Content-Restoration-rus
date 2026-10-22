@@ -84,6 +84,7 @@ patch00m.ru.bin
 - **Художники, выполнявшие демозаизацию изображений** — Bellandy и другие авторы, указанные в материалах Ultimate Edition.
 - **[kurikomoe/FSNr_tools](https://github.com/kurikomoe/FSNr_tools)** — исследования форматов REMASTERED-пакетов и EPK, а также работы, связанные с расшифровкой. `fsnr/fpd.py` и `fsnr/epk.py` основаны на этой работе. Подробности — в [`THIRD_PARTY.md`](THIRD_PARTY.md).
 - **[DaZombieKiller/FatePackageManager](https://github.com/DaZombieKiller/FatePackageManager)** — исследование формата игровых пакетов.
+- https://github.com/morluto/rea
 
 ### Русский перевод — Русь-moon
 
@@ -95,7 +96,7 @@ patch00m.ru.bin
 
 ### Использование ИИ
 
-Лаунчер разработан при помощи AI coding agent Copilot gpt astra под руководством автора проекта.
+Лаунчер разработан при помощи AI coding agent Copilot gpt astra и REA: Reverse Engineer Anything под руководством автора проекта.
 
 ---
 
