@@ -1,4 +1,4 @@
-Локальный инструмент для объединения существующего русского перевода **Fate/stay night REMASTERED** с восстановленным содержимым из проекта [FSN-Remastered-Restoration](https://github.com/Take00C/FSN-Remastered-Restoration).
+Локальный инструмент для объединения существующего русского перевода **Fate/stay night REMASTERED** с ultimate edition (2004/PS2 Realta Nua) из из проекта [FSN-Remastered-Restoration](https://github.com/Take00C/FSN-Remastered-Restoration).
 
 > [English version](README.md)
 
