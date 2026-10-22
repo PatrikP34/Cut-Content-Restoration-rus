@@ -46,20 +46,12 @@ kurikomoe/FSNr_tools: the REMASTERED pack and epk formats and the decryption key
 
 DaZombieKiller/FatePackageManager: pack format research.
 
-AI disclosure: this launcher was built by an AI coding agent, Claude Code (Claude Opus 5.5, Anthropic), working with and directed by the publisher. The agent:
+AI disclosure: this launcher was built by an AI coding agent, Claude Code (Claude Opus 5.5, Anthropic), working with and directed by the publisher.
 
-Русь-moon: Принимавшие участиеZanoru — Техническая часть, редактура и адаптация; Shoule — Редактура и переделка графики; Русь-мун — Предоставление текста и перевод; Animevod — Сверка с Японского; ausmood — Начальная помощь в текстурах;
+Русь-moon: Принимавшие участие Zanoru — Техническая часть, редактура и адаптация; Shoule — Редактура и переделка графики; Русь-мун — Предоставление текста и перевод; Animevod — Сверка с Японского; ausmood — Начальная помощь в текстурах;
 
-
-reverse-engineered the formats,
-wrote the code, and
-
-verified the results in the real game (CG placement with test patterns, audio by recording the game's output).
-
-No AI-generated art or audio is included or produced.
 
 
 License
 The code is released under the MIT License (see LICENSE). See THIRD_PARTY.md for the parts based on other people's work. Fate/stay night and all game content belong to TYPE-MOON. This project is unofficial and not affiliated with TYPE-MOON,
-
 Aniplex or the Ultimate Edition team.
