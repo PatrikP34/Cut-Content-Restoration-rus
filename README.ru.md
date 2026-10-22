@@ -1,5 +1,3 @@
-# Fate/stay night REMASTERED — восстановление русского перевода
-
 Локальный инструмент для объединения существующего русского перевода **Fate/stay night REMASTERED** с восстановленным содержимым из проекта [FSN-Remastered-Restoration](https://github.com/Take00C/FSN-Remastered-Restoration).
 
 > [English version](README.md)
