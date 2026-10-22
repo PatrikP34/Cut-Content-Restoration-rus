@@ -8,14 +8,14 @@ original_patch00m.bin — чистая английский версия Fate/st
 
 restored_patch00m.en.bin — английский архив после применения к нему патча https://github.com/Take00C/FSN-Remastered-Restoration;
 
-decryptKey.bin и SomeKey.bin;
-
-main.exe;
-
+decryptKey.bin и SomeKey.bin, main.exe;
 папка russian_merge со скриптами сборщика.
 
-FSN.Restoration.Launcher.exe создает restored_patch00m.en.bin в папке C:\user\<username>\AppData\Local\FSNRestoration\cache\patch00m.en.bin, В C:\Users\Aleksandr\AppData\Local\FSNRestoration\backup-obb хранится original_patch00m.bin 
+FSN.Restoration.Launcher.exe создает restored_patch00m.en.bin в папке 
+C:\user\<username>\AppData\Local\FSNRestoration\cache\patch00m.en.bin, 
+В C:\Users\Aleksandr\AppData\Local\FSNRestoration\backup-obb хранится original_patch00m.bin 
 
+Для объединения русификатора и патча Remastered-Restoration запустите build_russian_patch_latest.bat
 .\build_russian_patch.bat --russian .\russian_patch00m.bin --baseline .\original_patch00m.bin --restored-english .\restored_patch00m.en.bin --fpd-key .\decryptKey.bin --some-key .\SomeKey.bin --epk-tool .\main.exe --output .\patch00m.ru.bin
 
 
