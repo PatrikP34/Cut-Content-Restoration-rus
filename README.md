@@ -28,3 +28,22 @@ https://github.com/Take00C/FSN-Remastered-Restoration
 What you need
 Fate/stay night REMASTERED on Steam (game version 1.4.2.391).
 Fate/stay night [Réalta Nua] Ultimate Edition v1.1.4, installed. You can install it from sukebei.nyaa. Claude made it mandatory cause of it's safety protections regarding redistributing copy right material and I don't know how to bypass pass it sadly. However, the only files you require from the Réalta Nua Ultimate Edition v1.1.4 is patch.xp3, patch_h.xp3, patch_hd_1920.xp3, patch_lang_english.xp3 and 6 more files as fall backs image.xp3, bgimage.xp3, fgimage.xp3, voice.xp3, sound.xp3, bgm.xp3 but the build never uses them. After that you should be good to go.
+
+Credits
+
+TYPE-MOON: Fate/stay night. Please support the official release.
+The Fate/stay night [Réalta Nua] Ultimate Edition team: Jacktheinfinite101, Quibi, Kotonoha and everyone credited in their readme.
+Mirror Moon: the English translation used for restored lines.
+Fan demosaic artists: Bellandy and the others credited by the Ultimate Edition.
+kurikomoe/FSNr_tools: the REMASTERED pack and epk formats and the decryption keys. fsnr/fpd.py and fsnr/epk.py are based on that work.
+DaZombieKiller/FatePackageManager: pack format research.
+AI disclosure: this launcher was built by an AI coding agent, Claude Code (Claude Opus 5.5, Anthropic), working with and directed by the publisher. The agent:
+Русь-moon: Принимавшие участиеZanoru — Техническая часть, редактура и адаптация; Shoule — Редактура и переделка графики; Русь-мун — Предоставление текста и перевод; Animevod — Сверка с Японского; ausmood — Начальная помощь в текстурах;
+
+reverse-engineered the formats,
+wrote the code, and
+verified the results in the real game (CG placement with test patterns, audio by recording the game's output).
+No AI-generated art or audio is included or produced.
+
+License
+The code is released under the MIT License (see LICENSE). See THIRD_PARTY.md for the parts based on other people's work. Fate/stay night and all game content belong to TYPE-MOON. This project is unofficial and not affiliated with TYPE-MOON, Aniplex or the Ultimate Edition team.
