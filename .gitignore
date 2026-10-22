@@ -1,0 +1,31 @@
+# Python and IDE
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.idea/
+
+# Build outputs
+build/
+dist/
+work/
+*.spec
+
+# Game archives, keys, executables, and extracted game data
+*.bin
+*.exe
+*.dll
+*.dat
+*.xp3
+*.obb
+*.pak
+*.zip
+*.7z
+*.rar
+decryptKey.bin
+SomeKey.bin
+FSNRestoration_unpacked/
+rus/
+fsnr/
+FatePackageManager-main/
+extracted_from_exe/
