@@ -12,7 +12,7 @@ decryptKey.bin и SomeKey.bin, main.exe;
 папка russian_merge со скриптами сборщика.
 
 FSN.Restoration.Launcher.exe создает restored_patch00m.en.bin в папке 
-C:\users\<username>\AppData\Local\FSNRestoration\cache\patch00m.en.bin,
+C:\Users\<username>\AppData\Local\FSNRestoration\cache\patch00m.en.bin,
 
 В C:\Users\<username>\AppData\Local\FSNRestoration\backup-obb хранится original_patch00m.bin 
 
