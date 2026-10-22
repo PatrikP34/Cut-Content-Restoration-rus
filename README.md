@@ -6,7 +6,7 @@ russian_patch00m.bin — исходный русский перевод;
 
 original_patch00m.bin — чистая английский версия Fate/stay night REMASTERED;
 
-restored_patch00m.en.bin — английский архив после применения к нему патча https://github.com/Take00C/FSN-Remastered-Restoration;
+restored_patch00m.en.bin — файл, полученный после применения к нему патча https://github.com/Take00C/FSN-Remastered-Restoration;
 
 decryptKey.bin и SomeKey.bin, main.exe;
 папка russian_merge со скриптами сборщика.
