@@ -35,18 +35,31 @@ https://drive.google.com/drive/folders/188X3UV13WBZ7Ua07XgOgCZ83zMbu_71n?usp=dri
 Credits
 
 TYPE-MOON: Fate/stay night. Please support the official release.
+
 The Fate/stay night [Réalta Nua] Ultimate Edition team: Jacktheinfinite101, Quibi, Kotonoha and everyone credited in their readme.
+
 Mirror Moon: the English translation used for restored lines.
+
 Fan demosaic artists: Bellandy and the others credited by the Ultimate Edition.
+
 kurikomoe/FSNr_tools: the REMASTERED pack and epk formats and the decryption keys. fsnr/fpd.py and fsnr/epk.py are based on that work.
+
 DaZombieKiller/FatePackageManager: pack format research.
+
 AI disclosure: this launcher was built by an AI coding agent, Claude Code (Claude Opus 5.5, Anthropic), working with and directed by the publisher. The agent:
+
 Русь-moon: Принимавшие участиеZanoru — Техническая часть, редактура и адаптация; Shoule — Редактура и переделка графики; Русь-мун — Предоставление текста и перевод; Animevod — Сверка с Японского; ausmood — Начальная помощь в текстурах;
+
 
 reverse-engineered the formats,
 wrote the code, and
+
 verified the results in the real game (CG placement with test patterns, audio by recording the game's output).
+
 No AI-generated art or audio is included or produced.
 
+
 License
-The code is released under the MIT License (see LICENSE). See THIRD_PARTY.md for the parts based on other people's work. Fate/stay night and all game content belong to TYPE-MOON. This project is unofficial and not affiliated with TYPE-MOON, Aniplex or the Ultimate Edition team.
+The code is released under the MIT License (see LICENSE). See THIRD_PARTY.md for the parts based on other people's work. Fate/stay night and all game content belong to TYPE-MOON. This project is unofficial and not affiliated with TYPE-MOON,
+
+Aniplex or the Ultimate Edition team.
