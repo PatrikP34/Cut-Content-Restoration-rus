@@ -1,41 +1,111 @@
-# FSN Russian Restoration Merge
+# Fate/stay night REMASTERED — восстановление русского перевода
 
-Инструмент объединяет локальную русскую базу с изменениями английской Restoration: старается сохранить русские переводы, переносит непересекающиеся изменения сценариев и добавляет английские строки, которых нет в русской базе.
+Локальный инструмент для объединения существующего русского перевода **Fate/stay night REMASTERED** с восстановленным содержимым из проекта [FSN-Remastered-Restoration](https://github.com/Take00C/FSN-Remastered-Restoration).
 
-## Сборка локального патча
+> [English version](README.md)
 
-Для работы нужны Windows, Python 3.10 и файлы, полученные из вашей легальной установки игры и используемого Restoration:
+> Репозиторий не содержит оригинальную игру или игровые ресурсы. Получайте и используйте необходимые файлы только из установок и источников, к которым у вас есть законный доступ.
 
-- чистый английский `patch00m.bin` до Restoration;
-- английский `patch00m` после подготовки Restoration;
-- русский исходный `patch00m.bin`;
-- `decryptKey.bin` и `SomeKey.bin`;
-- совместимая EPK-утилита `main.exe`.
+##  Сборка патча
 
-Сборщик не включает эти игровые файлы в проект и не скачивает их. Запустите из PowerShell в папке проекта:
+### 1. Что потребуется
 
-```powershell
-py -3.10 .\build_russian_patch.py --russian ".\russian_patch00m.bin" --baseline ".\original_patch00m.bin" --restored-english ".\restored_patch00m.en.bin" --fpd-key ".\decryptKey.bin" --some-key ".\SomeKey.bin" --epk-tool ".\main.exe" --output ".\patch00m.ru.bin"
+- **Fate/stay night REMASTERED** в Steam, версия `1.4.2.391`.
+- Установленная **Fate/stay night [Réalta Nua] Ultimate Edition v1.1.4** — согласно требованиям [FSN-Remastered-Restoration](https://github.com/Take00C/FSN-Remastered-Restoration).
+- Следующие файлы и папка рядом с `build_russian_patch_latest.bat`:
+
+| Файл или папка | Назначение |
+|---|---|
+| `russian_patch00m.bin` | Исходный патч русского перевода |
+| `original_patch00m.bin` | Оригинальный английский патч REMASTERED |
+| `restored_patch00m.en.bin` | Английский патч после обработки FSN-Remastered-Restoration |
+| `decryptKey.bin` | Файл ключа расшифровки |
+| `SomeKey.bin` | Дополнительный файл ключа |
+| `main.exe` | Инструмент обработки EPK |
+| `russian_merge/` | Скрипты сборки и вспомогательный код |
+
+### 2. Найдите исходные файлы
+
+Запустите `FSN.Restoration.Launcher.exe`. Восстановленный английский патч сохраняется в кэше:
+
+```text
+%LOCALAPPDATA%\FSNRestoration\cache\patch00m.en.bin
 ```
 
-Исходные архивы не перезаписываются. Перед установкой результата сохраните резервную копию игровых файлов.
+Скопируйте этот файл в каталог сборки и переименуйте его в `restored_patch00m.en.bin`.
 
-## Подготовка исходников для GitHub в PyCharm
+Оригинальный английский патч хранится здесь:
 
-В GitHub создайте пустой репозиторий, затем откройте эту папку в PyCharm. Откройте вкладку **Terminal** и выполните:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\prepare_github.ps1
+```text
+%LOCALAPPDATA%\FSNRestoration\backup-obb\original_patch00m.bin
 ```
 
-Скрипт инициализирует Git, если нужно, и добавит в staging только исходный код сборщика, тест и документацию. Он **не делает commit и не отправляет изменения на GitHub**. Проверьте список в выводе и в окне **Commit** PyCharm. Если там есть `.bin`, ключи, `.exe` или игровые данные, отмените отправку и проверьте настройки Git.
+Скопируйте `original_patch00m.bin` в каталог сборки. Обычно `%LOCALAPPDATA%` соответствует пути `C:\Users\<имя_пользователя>\AppData\Local`.
 
-Чтобы подключить созданный на GitHub репозиторий, откройте **Git → Manage Remotes** в PyCharm и добавьте URL своего репозитория. Затем создайте commit и используйте **Git → Push**.
+### 3. Запустите сборку
 
-`.gitignore` дополнительно исключает игровые архивы, ключи, исполняемые файлы, распакованные данные, виртуальное окружение и результаты сборки. Не используйте `git add -f` для этих файлов.
+**Вариант A — через BAT-файл**
 
-## Авторство и лицензии
+Запустите `build_russian_patch_latest.bat` и дождитесь завершения сборки.
 
-Укажите авторов только для тех частей, которые действительно создали или изменили, и сохраняйте сторонние уведомления. Код проекта и сторонние компоненты имеют разные условия. В частности, перед публичной публикацией кода, основанного на FSNr_tools, проверьте лицензию и получите разрешение у автора, если оно необходимо. `LICENSE` распространяется только на код проекта и не предоставляет прав на игру или её материалы.
+**Вариант B — через командную строку PowerShell**
 
-Не публикуйте игровые архивы, тексты, изображения, звук, ключи расшифровки или готовый `patch00m.ru.bin`. Наличие лицензии на игру не означает разрешения распространять её игровые файлы. Игра и её материалы принадлежат правообладателям; этот инструмент неофициальный и не связан с TYPE-MOON.
+Находясь в каталоге проекта, выполните:
+
+```powershell
+.\build_russian_patch.bat --russian .\russian_patch00m.bin --baseline .\original_patch00m.bin --restored-english .\restored_patch00m.en.bin --fpd-key .\decryptKey.bin --some-key .\SomeKey.bin --epk-tool .\main.exe --output .\patch00m.ru.bin
+```
+
+### 4. Установите результат
+
+После успешной сборки появится файл:
+
+```text
+patch00m.ru.bin
+```
+
+1. Переименуйте его в `patch00m.bin`.
+2. Откройте каталог игры `Blade\obb`.
+3. Сохраните резервную копию оригинального файла и замените его новым `patch00m.bin`.
+
+## Готовые файлы
+
+(https://drive.google.com/drive/folders/188X3UV13WBZ7Ua07XgOgCZ83zMbu_71n?usp=drive_link) 
+
+Требования к восстановлению и дополнительную информацию см. в проекте [FSN-Remastered-Restoration](https://github.com/Take00C/FSN-Remastered-Restoration).
+
+---
+
+## (Credits)
+
+### Оригинальная игра и переводческие материалы
+
+- **TYPE-MOON** — *Fate/stay night*. Поддерживайте официальный релиз.
+- **Команда Fate/stay night [Réalta Nua] Ultimate Edition** — Jacktheinfinite101, Quibi, Kotonoha и все участники, указанные в README проекта.
+- **Mirror Moon** — английский перевод, использованный для восстановления строк.
+- **Художники, выполнявшие демозаизацию изображений** — Bellandy и другие авторы, указанные в материалах Ultimate Edition.
+
+### Техническая основа и инструменты
+
+- **[kurikomoe/FSNr_tools](https://github.com/kurikomoe/FSNr_tools)** — исследования форматов REMASTERED-пакетов и EPK, а также работы, связанные с расшифровкой. `fsnr/fpd.py` и `fsnr/epk.py` основаны на этой работе. Подробности — в [`THIRD_PARTY.md`](THIRD_PARTY.md).
+- **[DaZombieKiller/FatePackageManager](https://github.com/DaZombieKiller/FatePackageManager)** — исследование формата игровых пакетов.
+
+### Русский перевод — Русь-moon
+
+- **Zanoru** — техническая часть, редактура и адаптация.
+- **Shoule** — редактура и переработка графики.
+- **Русь-мун** — предоставление текста и перевод.
+- **Animevod** — сверка с японским оригиналом.
+- **ausmood** — первоначальная помощь с текстурами.
+
+### Использование ИИ
+
+Лаунчер разработан при помощи AI coding agent gpt astra под руководством автора проекта.
+
+---
+
+## License)
+
+Код репозитория распространяется под лицензией **MIT**. Полный текст находится в [`LICENSE`](LICENSE). Информация о сторонних разработках и соответствующие уведомления приведены в [`THIRD_PARTY.md`](THIRD_PARTY.md).
+
+**Fate/stay night и все игровые материалы принадлежат TYPE-MOON.** Это неофициальный фанатский проект, не связанный с TYPE-MOON, Aniplex или командой Ultimate Edition. Лицензия MIT распространяется только на код репозитория и не предоставляет прав на игру или её ресурсы.
