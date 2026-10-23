@@ -14,8 +14,8 @@
 
 | Файл или папка | Назначение |
 |---|---|
-| `russian_patch00m.bin` | Патч русского перевода |
-| `original_patch00m.bin` | Оригинальный файл REMASTERED |
+| `russian_patch00m.bin` | Патч русского перевода patch00m.bin (чисто русский перевод) |
+| `original_patch00m.bin` | Оригинальный файл patch00m.bin REMASTERED (исходник стимовского REMASTERED) |
 | `restored_patch00m.en.bin` | Файл REMASTERED после обработки FSN-Remastered-Restoration |
 | `decryptKey.bin` | Файл ключа расшифровки |
 | `SomeKey.bin` | Дополнительный файл ключа |
