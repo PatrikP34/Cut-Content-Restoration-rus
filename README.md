@@ -96,7 +96,7 @@ patch00m.ru.bin
 
 ### Использование ИИ
 
-сприпт на основе лаунчера разработан при помощи AI coding agent Copilot gpt astra и REA: Reverse Engineer Anything
+сприпт на основе лаунчера разработан при помощи AI coding agent gpt astra и REA: Reverse Engineer Anything
 
 ---
 
