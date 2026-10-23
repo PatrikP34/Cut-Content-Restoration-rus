@@ -24,7 +24,7 @@
 
 ### 2. Найдите исходные файлы
 
-Запустите `FSN.Restoration.Launcher.exe`. Файл REMASTERED после обработки FSN-Remastered-Restoration:
+Запустите `FSN.Restoration.Launcher.exe`. Файл REMASTERED после обработки FSN-Remastered-Restoration будет расположен в:
 
 ```text
 %LOCALAPPDATA%\FSNRestoration\cache\patch00m.en.bin
