@@ -35,10 +35,10 @@
 Оригинальный файл REMASTERED хранится здесь:
 
 ```text
-%LOCALAPPDATA%\FSNRestoration\backup-obb\original_patch00m.bin
+%LOCALAPPDATA%\FSNRestoration\backup-obb\patch00m.bin
 ```
 
-Скопируйте `original_patch00m.bin` в каталог сборки. Обычно `%LOCALAPPDATA%` соответствует пути `C:\Users\<имя_пользователя>\AppData\Local`.
+Скопируйте `patch00m.bin` в каталог сборки и переименуйте в `original_patch00m.bin` Обычно `%LOCALAPPDATA%` соответствует пути `C:\Users\<имя_пользователя>\AppData\Local`.
 
 ### 3. Запустите сборку
 
