@@ -1,4 +1,4 @@
-Локальный инструмент для объединения существующего русского перевода **Fate/stay night REMASTERED** с ultimate edition (2004/PS2 Realta Nua) из проекта [FSN-Remastered-Restoration](https://github.com/Take00C/FSN-Remastered-Restoration).
+Локальный скрипт для объединения существующего русского перевода **Fate/stay night REMASTERED** с ultimate edition (2004/PS2 Realta Nua) из проекта [FSN-Remastered-Restoration](https://github.com/Take00C/FSN-Remastered-Restoration).
 
 > [English version](README.md)
 
@@ -96,7 +96,7 @@ patch00m.ru.bin
 
 ### Использование ИИ
 
-Лаунчер разработан при помощи AI coding agent Copilot gpt astra и REA: Reverse Engineer Anything
+сприпт на основе лаунчера разработан при помощи AI coding agent Copilot gpt astra и REA: Reverse Engineer Anything
 
 ---
 
